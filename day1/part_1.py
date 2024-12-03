@@ -11,7 +11,7 @@ def get_smallest(data: list[int]) -> tuple[int, int]:
     return smallest, smallest_index
 
 
-with open("part_1.txt", "r", encoding="utf-8") as file:
+with open("part_1_2.txt", "r", encoding="utf-8") as file:
     lines = file.readlines()
 
 list_a, list_b = [], []
@@ -21,8 +21,6 @@ for line in lines:
     nums = line.split()
     list_a.append(int(nums[0]))
     list_b.append(int(nums[1]))
-
-length = len(list_a)
 
 count = 0
 while True:
